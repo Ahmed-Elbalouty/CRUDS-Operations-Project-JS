@@ -1,2 +1,3 @@
 # CRUDS-operations-project-JS
-This is a project to create product management website for training on CRUDS operations using JS.
+This is a project to create product management website for training on CRUDS operations (Create | Read | Update | Delete | Search) using JavaScript language by storing any store products and saving this data in the local storage by writing the product name, price, tax, advertisements, and discounts, and calculating the total price of the product after these operations.<br> Furthermore We can create more than one product at a time and search for products using product name or category. We can also modify or delete data of product, and we can delete all products at once.<br>
+And This link for my design live site : [Click here](https://ahmed-elbalouty.github.io/CRUDS-operations-project-JS/)
