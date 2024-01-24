@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Scroller  */
+.scroller{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 5px;
+    background-color: rgb(11, 124, 11);
+}
+/* Scroller  */
+body{
+background-color: #eee;
+font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 80%;
+    margin: 20px auto;
+}
+h1 , p{
+text-align: center;
+}
+h1{
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+p{
+    font-size: 18px;
+}
+.inputs{
+    margin-top: 20px;
+}
+input {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    height: 40px;
+    padding: 8px;
+    background-color: #ddd;
+    font-size: 17px;
+    transition: .5s;
+}
+input:focus{
+    transform: scale(1.08);
+}
+.price input{
+    width: 19%;
+}
+small{
+    padding: 5px;
+    background-color: #a00;
+    color:white;
+    border-radius: 5px;
+}
+small::before{
+    content: "Total: ";
+}
+button{
+    width: 100%;
+    border: none;
+    background-color: green;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 20px;
+    color:white;
+    transition: .5s;
+    cursor: pointer;
+} 
+#create:hover{
+    letter-spacing: 2px;
+}
+button:hover{
+    background-color: rgb(14, 105, 14);
+}
+.outputs{
+    margin-top: 10px;
+}
+.search-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search-btns button{
+    width: 45%;
+}
+.table-container{
+    overflow-x: auto;
+}
+table{
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+}
+th{
+    text-transform: uppercase;
+    font-size: 18px;
+}
+th,td{
+    padding: 5px;
+}
+td{
+    font-size: 17px;
+}
+#update,#delete{
+    font-size: 17px;
+    height: 30px;
+}
+#delete{
+    background-color: #a00;
+}
+#delete-all {
+    margin-top: 15px;
+}
+@media (min-width : 768px){
+    .price input:not(:last-child){
+        margin-right: 8px;
+    }
+}
+@media (max-width : 767px){
+    .price{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .price input{
+        width: 47%;
+    }
+    #total{
+        margin: 0 auto 10px;
+    }
+    .search-btns button{
+        font-size: 15px;
+        padding: 0 10px;
+    }
+}
+
